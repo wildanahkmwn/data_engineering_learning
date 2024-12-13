@@ -208,12 +208,14 @@ Run the script with Docker
 ```bash
 URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
 
+URL="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet"
+
 docker run -it \
   --network=pg-network \
   taxi_ingest:v001 \
     --user=root \
     --password=root \
-    --host=pg-database \
+    --host=pgdatabasee \
     --port=5432 \
     --db=ny_taxi \
     --table_name=yellow_taxi_trips \
