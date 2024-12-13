@@ -1,0 +1,6 @@
+.idea/
+.DS_Store
+*.csv
+*.parquet
+*.txt
+ny_taxi_postgres_data/
